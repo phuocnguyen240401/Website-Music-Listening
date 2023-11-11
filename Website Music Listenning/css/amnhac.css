@@ -1,0 +1,43 @@
+.HANG {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.filter {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.filter button {
+    padding: 10px 20px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+}
+
+.song {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+.song.active {
+    display: block;
+}
+
+.nhactre {
+    background-color: rgb(211, 239, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+.nhacbolero {
+    background-color: rgb(211, 239, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+.nhacnn {
+    background-color: rgb(211, 239, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}

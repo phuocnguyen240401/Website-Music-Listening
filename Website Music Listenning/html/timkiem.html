@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- sửa title -->
+    <title>Tìm kiếm</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/amnhac.css">
+    <!-- liên kết đến file js và css ở đây -->
+    <style type="text/css">
+        .song>div:nth-child(1) {
+            text-align: left;
+            border-bottom: 2px solid #eee!important;
+            margin-bottom: 20px;
+        }
+        
+        .song h4 {
+            margin: 15px 0 15px 0 !important;
+            border-bottom: none !important;
+            /*display: block !important;*/
+        }
+        
+        .Loc {
+            display: inline-block;
+        }
+        
+        .main {
+            padding-top: 20px;
+        }
+    </style>
+    <!-- end -->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="row header">
+        <div class="col-xl-8 col-sm-12 logo">
+            <a href="index.html">
+                <h3>Trang Web Âm Nhạc</h3>
+            </a>
+        </div>
+        <div class="col-xl-4 col-sm-12 search">
+            <form action="" onsubmit="return false">
+                <input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+            </form>
+
+        </div>
+        <div class="col-xl-12 col-sm-12">
+            <ul class="menu">
+                <li><a href="#" class="amnhac" data-type="nhactre"><i class="" style="font-size: 25px;"></i>Nhạc Trẻ</a></li>
+                <li><a href="#" class="amnhac" data-type="nhacbolero"><i class="" style="font-size: 20px;"></i>Nhạc Bolero</a></li>
+                <li><a href="#" class="amnhac" data-type="nhacnn"><i class="" style="font-size: 21px;"></i>Nhạc Nước Ngoài</a></li>
+                <li><a href="#"><i class="" style="font-size: 21px;"></i>Tin tức</a></li>
+                <li><a href="#"><i class=""  style="font-size: 20px;"></i>Giới thiệu</a></li>
+            </ul>
+            <div class="btn-group user">
+                <button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					<div id="ico"></div>
+                    <div id="ico"></div>
+                    <div id="ico"></div>
+				</button>
+                <ul class="dropdown-menu">
+                    <li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+                    <li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+                    <li class="item-dangxuat">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#" style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- content -->
+    <div class="row main">
+
+
+        <div class="row song active">
+            <div>
+                <h4>Kết quả tìm kiếm cho "<span class="keyword"></span>"</h4>
+            </div>
+            <p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có Bài Hát phù hợp</p>
+            <div class="row list-song">
+
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- footer -->
+    <div class="row footer">
+        <div class="col-sm-12 col-12">
+            <h4>Thông tin liên lạc</h4>
+            <p>Email: <a href="mailto:phuocnguyen240401@gmail.com">NHOM11@gmail.com</a></p>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/amnhac.js"></script>
+    <script src="../js/timkiem.js"></script>
+    </script>
+    <script type="text/javascript">
+        url = window.location.href;
+
+        function start() {
+
+            document.title = "Kết quả tìm kiếm cho " + localStorage["search"];
+            search();
+        }
+        start();
+    </script>
+</body>
+
+</html>

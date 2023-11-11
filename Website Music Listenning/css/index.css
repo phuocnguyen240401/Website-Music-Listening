@@ -1,0 +1,39 @@
+.list-song>div {
+    /*display: inline-block;*/
+}
+
+.list-nhactop {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.list-nhactop::-webkit-scrollbar {
+    display: none;
+}
+
+.list-nhactop .slide {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.nhactre {
+    background-color: rgb(211, 239, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+.nhacbolero {
+    background-color: rgb(211, 239, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}
+
+.nhacnn {
+    background-color: rgb(211, 239, 255);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Âm Nhạc</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="row header">
+        <div class="col-xl-8 col-sm-12 logo">
+            <a href="index.html">
+                <h3>Trang Web Âm Nhạc</h3>
+            </a>
+        </div>
+        <div class="col-xl-4 col-sm-12 search">
+            <form action="" onsubmit="return false">
+                <input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+            </form>
+
+        </div>
+        <div class="col-xl-12 col-sm-12">
+            <ul class="menu">
+                <li><a href="#" class="amnhac" data-type="nhactre"><i class="" style="font-size: 25px;"></i>Nhạc Trẻ</a></li>
+                <li><a href="#" class="amnhac" data-type="nhacbolero"><i class="" style="font-size: 20px;"></i>Nhạc Bolero</a></li>
+                <li><a href="#" class="amnhac" data-type="nhacnn"><i class="" style="font-size: 21px;"></i>Nhạc Nước Ngoài</a></li>
+                <li><a href="#"><i class="" style="font-size: 21px;"></i>Tin tức</a></li>
+                <li><a href="#"><i class=""  style="font-size: 20px;"></i>Giới thiệu</a></li>
+            </ul>
+            <div class="btn-group user">
+                <button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					<div id="ico"></div>
+                    <div id="ico"></div>
+                    <div id="ico"></div>
+				</button>
+                <ul class="dropdown-menu">
+                    <li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+                    <li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+                    <li class="item-dangxuat">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#" style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- content -->
+    <div class="row main">
+        <!-- banner -->
+        <div class="row banner">
+
+            <div class="col-lg-4">
+                <div class="row">
+                    <a href="#">
+                        <img src="../images/logo2.jpg" style="width: 100%">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#">
+                        <img src="../images/logo3.jpg" style="width: 100%">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button style="background-color: white;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button style="background-color: white;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button style="background-color: white;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="chitietamnhac.html?id=10">
+                                <img src="../images/logo.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="chitietamnhac.html?id=15">
+                                <img src="../images/logo2.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="chitietamnhac.html?id=7">
+                                <img src="../images/logo3.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<!-- <span class="carousel-control-prev-icon" 
+							aria-hidden="true"></span> -->
+						<i class="fas fa-chevron-left" style="color: white;font-size: 30px;"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<i class="fas fa-chevron-right" style="color: white;font-size: 30px;"></i>
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+						<span class="visually-hidden">Next</span>
+					</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- end banner -->
+        <!-- Nhạc Top -->
+        <div class="row nhactop">
+            <div class="">
+                <h4>Nhạc Top</h4>
+            </div>
+
+            <div class="list-nhactop">
+            </div>
+        </div>
+        <!--nhactre-->
+        <div class="row song nhactre">
+            <div>
+                <h4>Nhạc Trẻ</h4>
+            </div>
+            <div class="row list-song">
+
+            </div>
+        </div>
+        <!-- end nhactre -->
+        <!-- nhacbolero -->
+        <div class="row song nhacbolero">
+            <div>
+                <h4>Nhạc Bolero</h4>
+            </div>
+            <div class="row list-song">
+
+            </div>
+        </div>
+        <!-- end nhacbolero -->
+        <!-- nhacnn -->
+        <div class="row song nhacnn">
+            <div>
+                <h4>Nhạc Nước Ngoài</h4>
+            </div>
+            <div class="row list-song">
+
+            </div>
+        </div>
+        <!-- end nhacnn -->
+    </div>
+    <!-- footer -->
+    <div class="row footer">
+        <div class="col-sm-12 col-12">
+            <h4>Thông tin liên lạc</h4>
+            <p>Email: <a href="mailto:phuocnguyen240401@gmail.com">NHOM11@gmail.com</a></p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/slide-nhactop.js"></script>
+    <script type="text/javascript" src="../js/render-song.js"></script>
+    <script type="text/javascript">
+        function start() {
+            render_nhactop();
+            slide_nhactop();
+            render_song(data, "nhactre");
+            render_song(data, "nhacbolero");
+            render_song(data, "nhacnn");
+            localStorage["username"] = "nguyenthanhphuoc";
+        }
+        start();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/song-detail.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="row header">
+        <div class="col-xl-8 col-sm-12 logo">
+            <a href="index.html">
+                <h3>Trang Web Âm Nhạc</h3>
+            </a>
+        </div>
+        <div class="col-xl-4 col-sm-12 search">
+            <form action="" onsubmit="return false">
+                <input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+                <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+            </form>
+
+        </div>
+        <div class="col-xl-12 col-sm-12">
+            <ul class="menu">
+                <li><a href="#" class="amnhac" data-type="nhactre"><i class="" style="font-size: 25px;"></i>Nhạc Trẻ</a></li>
+                <li><a href="#" class="amnhac" data-type="nhacbolero"><i class="" style="font-size: 20px;"></i>Nhạc Bolero</a></li>
+                <li><a href="#" class="amnhac" data-type="nhacnn"><i class="" style="font-size: 21px;"></i>Nhạc Nước Ngoài</a></li>
+                <li><a href="#"><i class="" style="font-size: 21px;"></i>Tin tức</a></li>
+                <li><a href="#"><i class=""  style="font-size: 20px;"></i>Giới thiệu</a></li>
+            </ul>
+            <div class="btn-group user">
+                <button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					<div id="ico"></div>
+                    <div id="ico"></div>
+                    <div id="ico"></div>
+				</button>
+                <ul class="dropdown-menu">
+                    <li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+                    <li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+                    <li class="item-dangxuat">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#" style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- content -->
+    <div class="row main" style="margin-top: 20px">
+        <!-- nav -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Bài Hát</a></li>
+                <li class="breadcrumb-item active" aria-current="page"></li>
+            </ol>
+        </nav>
+        <!-- end nav -->
+
+        <div class="row">
+            <div class="col-xl-9 col-sm-12">
+                <!-- general -->
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-lg-5 col-sm-5">
+                        <img class="img-song" src="" style="width:100%; margin-bottom: 20px;">
+                    </div>
+                    <div class="col-lg-7 col-sm-7 general">
+                        <div class="section-title">
+                            <h3 class="song-name"></h3>
+                            <p style="margin-bottom: 4px">Nghệ Sĩ: <span class="author"><span></span></span>
+                            </p>
+                            <p style="margin-bottom: 4px"><audio class="link-song" src="" controls="" autoplay="" loop="">
+                                
+                            </audio></p>
+                        </div>
+
+                        <div style="border:none">
+                            <a class="btn btn-custom down-song" href="" download="">Download</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end general -->
+
+                <!-- detail -->
+                <div class="row">
+                    <!-- menu tab -->
+                    <ul class="nav nav-tabs" id="detail" role="detail-list">
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#song-review" role="tab" aria-controls="song-review" aria-selected="false">Đánh giá Bài Hát</a>
+                        </li>
+                    </ul>
+                    <!-- end menu tab -->
+
+                    <!-- review  -->
+                    <div class="tab-pane fade" id="song-review" role="tabpanel" aria-labelledby="contact-tab">
+                        <h4> Đánh Giá Về : <span class="phone-name"></span></h4>
+                        <!-- overview -->
+                        <div class="row overview">
+                            <div class="col-xl-2 col-sm-2" style="border-right: 1px solid #eee">
+                                <h2>4.7 <i class="fas fa-star"></i></h2>
+                            </div>
+                            <div class="col-xl-5 col-sm-6" style="border-right: 1px solid #eee">
+                                <ul>
+                                    <li>
+                                        5 <i class="fas fa-star"></i>
+                                        <div class="process-bar">
+                                            <div class="below"></div>
+                                            <div class="slide-bar" style="width: 74%"></div>
+                                        </div>
+                                        <span class="count-review">37</span> đánh giá
+                                    </li>
+                                    <li>
+                                        4 <i class="fas fa-star"></i>
+                                        <div class="process-bar">
+                                            <div class="below"></div>
+                                            <div class="slide-bar" style="width: 12%"></div>
+                                        </div>
+                                        <span class="count-review">6</span> đánh giá
+                                    </li>
+                                    <li>
+                                        3 <i class="fas fa-star"></i>
+                                        <div class="process-bar">
+                                            <div class="below"></div>
+                                            <div class="slide-bar" style="width: 6%"></div>
+                                        </div>
+                                        <span class="count-review">3</span> đánh giá
+                                    </li>
+                                    <li>
+                                        2 <i class="fas fa-star"></i>
+                                        <div class="process-bar">
+                                            <div class="below"></div>
+                                            <div class="slide-bar" style="width: 4%"></div>
+                                        </div>
+                                        <span class="count-review">2</span> đánh giá
+                                    </li>
+                                    <li>
+                                        1 <i class="fas fa-star"></i>
+                                        <div class="process-bar">
+                                            <div class="below"></div>
+                                            <div class="slide-bar" style="width: 4%"></div>
+                                        </div>
+                                        <span class="count-review">2</span> đánh giá
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-5 col-sm-4">
+                                <div class="evaluate" style="padding-top: 25px;">
+                                    <div class="section-review">
+                                        <!-- reversed -->
+                                        <a class="btn-star star5" data-star="5"><i class="fas fa-star"></i></a>
+                                        <a class="btn-star star4" data-star="4"><i class="fas fa-star"></i></a>
+                                        <a class="btn-star star3" data-star="3"><i class="fas fa-star"></i></a>
+                                        <a class="btn-star star2" data-star="2"><i class="fas fa-star"></i></a>
+                                        <a class="btn-star star1" data-star="1"><i class="fas fa-star"></i></a>
+                                    </div>
+                                    <button class="btn btn-primary btn-vote" data-star="0">Gửi đánh giá</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end overview -->
+                        <!-- comment -->
+                        <div class="row section-comment">
+
+
+                            <div class="comment">
+                                <h5>Minh</h5>
+
+                                <div class="star-vote" data-star="2">
+                                    <div class="section-review">
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                    </div>
+                                </div>
+                                <p>Hay quá</p>
+                                <div class="">
+                                    <a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">2 thảo luận</a>
+                                    <a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+                                    <p>3 tuần trước</p>
+                                </div>
+                                <div class="reply">
+                                    <ul>
+                                        <li>
+                                            <h6>Nhật</h6>
+                                            <p>Oke !</p>
+                                            <div>
+                                                <a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+                                                <p>2 tuần trước</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h6>Long</h6>
+                                            <p>Quá oke!</p>
+                                            <div>
+                                                <a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+                                                <p>2 tuần trước</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="add-comment">
+                                        <textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+                                        <button class="btn btn-primary btn-reply">Gửi</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <h5>Lam</h5>
+
+                                <div class="star-vote" data-star="2">
+                                    <div class="section-review">
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                    </div>
+                                </div>
+                                <p>Nhạc hay ghê !</p>
+                                <div class="">
+                                    <a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+                                    <a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+                                    <p>2 tuần trước</p>
+                                </div>
+                                <div class="reply">
+                                    <ul>
+
+                                    </ul>
+                                    <div class="add-comment">
+                                        <textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+                                        <button class="btn btn-primary btn-reply">Gửi</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="comment">
+                                <h5>Hiền</h5>
+
+                                <div class="star-vote" data-star="2">
+                                    <div class="section-review">
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                        <i class="fas fa-star" style="color: #fd9727"></i>
+                                    </div>
+                                </div>
+                                <p>Very good !</p>
+                                <div class="">
+                                    <a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+                                    <a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+                                    <p>2 tuần trước</p>
+                                </div>
+                                <div class="reply">
+                                    <ul>
+
+                                    </ul>
+                                    <div class="add-comment">
+                                        <textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+                                        <button class="btn btn-primary btn-reply">Gửi</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="add-comment">
+                            <div>
+                                <textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+                                <div>
+                                    <button class="btn btn-primary btn-comment">Gửi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end comment -->
+                    </div>
+                    <!-- end review  -->
+                </div>
+            </div>
+            <!-- end detail -->
+        </div>
+        <!-- relate song -->
+        <!--  
+            <div class="sec-relate col-xl-3 col-sm-12">
+                <div class="relate">
+                    <h4>Bài Hát tương tự</h4>
+                    <hr class="row" style="color: #908f8f; height: 2px;margin-bottom: 0;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="chitietamnhac.html?id=2">
+                                <img src="../images/song/n4.jpg">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <h5><a href="chitietamnhac.html?id=2">Chiều Bên Đồi Sim</a></h5>
+                            <p>Hoàng Hải</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="chitietamnhac.html?id=3">
+                                <img src="../images/song/n5.jpg">
+                            </a>
+                        </div>
+                        <div class="col-lg-8">
+                            <h5><a href="chitietamnhac.html?id=3">Đa Đa Bay Xa</a></h5>
+                            <p>Bảo Nguyên</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <a href="chitietamnhac.html?id=4">
+                                <img src="../images/song/n1.jpg">
+                            </a>
+                        </div>
+                        <div class="col-lg-8">
+                            <h5><a href="chitietamnhac.html?id=4">Tiếng Đàn Kìm</a></h5>
+                            <p>Thảo Vy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        <!-- end relate song -->
+    </div>
+    <!-- notification -->
+    <div class="sec-notification ">
+
+    </div>
+    <!-- end notification -->
+    </div>
+    <!-- end content -->
+    <!-- footer -->
+    <div class="row footer">
+        <div class="col-sm-12 col-12">
+            <h4>Thông tin liên lạc</h4>
+            <p>Email: <a href="mailto:phuocnguyen240401@gmail.com">NHOM11@gmail.com</a></p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/chitietamnhac.js"></script>
+    </script>
+    <script type="text/javascript">
+        url = window.location.href;
+
+        function start() {
+            params = getParams(url);
+            song = get_song(params["id"]);
+            render_song(song);
+            console.log(localStorage["username"]);
+        }
+        start();
+    </script>
+</body>
+
+</html>

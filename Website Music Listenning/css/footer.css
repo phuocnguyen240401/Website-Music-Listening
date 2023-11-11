@@ -1,0 +1,11 @@
+.footer {
+    margin-top: 20px;
+    padding: 10px 50px;
+    background-color: rgb(190, 185, 185);
+    background-image: url(../images/hinhnen.jpg);
+    background-repeat: no-repeat;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+}
